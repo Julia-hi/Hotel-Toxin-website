@@ -172,3 +172,10 @@ body{
   .right{
       float: right;
   }
+
+  .search{
+      width: 400px;
+      height: 400px;
+      background-color: #fff;
+      border-radius: 4px;
+  }
