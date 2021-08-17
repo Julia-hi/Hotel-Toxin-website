@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wraped_loaded">
+        <header class="header">
+            <div class="container">
+                <div class="header__logo">
+                    <img class="header__logo-icon" src="img/logo.svg" alt="logo icon" width="40">
+                    <img class="header__logo-text" src="img/TOXIN.svg" alt="TOXIN" height="13">
+                </div>
+
+
+                <nav class="menu">
+                    <a class="menu__link" rel="next" href="#">О нас</a>
+                    <a class="menu__link" rel="next" href="#">Услуги</a>
+                    <a class="menu__link" rel="next" href="#">Вакансии</a>
+                    <a class="menu__link" rel="next" href="#">Новости</a>
+                    <a class="menu__link" rel="next" href="#">Соглашения</a>
+                    <button class="menu__login" type="button">Войти</button>
+                    <button class="menu__register">Зарегистрироваться</button>
+                </nav>
+
+            </div>
+        </header>
+        <!-- main of page  -->
+        <main>
+            <div class="container">
+                <div class="search">
+                    <h3>Найдем номера под ваши пожелания</h3>
+                    <form action="">
+                        <div class="item1 item">
+                        <label for="arrival">прибытие</label><br>
+                        <input type="text" id="firstDay" name="arrival" value="ДД.ММ.ГГГГ"><br></div>
+                        <div class="item2 item">
+                        <label for="depart">выезд</label><br>
+                        <input type="text" id="secondDay" name="depart" value="ДД.ММ.ГГГГ"><br></div>
+                        <label for="guests">гости</label><br>
+                        <select id = "guests" name="guest" value="Сколько гостей">
+                        
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            </select><br>
+                        <input class="submit_button" type="button" value="подобрать номер">
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- footer of page  -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__section1">
+                    <div class="footer__logo">
+                        <img class="footer__logo-icon" src="img/logo.svg" alt="logo icon" width="40">
+                        <img class="footer__logo-text" src="img/TOXIN.svg" alt="TOXIN" height="13">
+                    </div>
+                    <div class="content">
+                        <p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+                    </div>
+                </div>
+                <div class="footer__section2">
+                    <div class="footer__list">
+                        <h3>Навигация</h3>
+                        <ul>
+                            <li><a class="menu__link transparent" href="#">О нас</a></li>
+                            <li><a class="menu__link transparent" href="#">Новости</a></li>
+                            <li><a class="menu__link transparent" href="#">Служба поддержки</a></li>
+                            <li><a class="menu__link transparent" href="#">Услуги</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__section2">
+                    <div class="footer__list">
+                        <h3>О нас</h3>
+                        <ul>
+                            <li><a class="menu__link transparent" href="#">О сервисе</a></li>
+                            <li><a class="menu__link transparent" href="#">Наша команда</a></li>
+                            <li><a class="menu__link transparent" href="#">Вакансии</a></li>
+                            <li><a class="menu__link transparent" href="#">Инвесторы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__section2">
+                    <div class="footer__list">
+                        <h3>Служба поддержки</h3>
+                        <ul>
+                            <li><a class="menu__link transparent" href="#">Соглашения</a></li>
+                            <li><a class="menu__link transparent" href="#">Сообщества</a></li>
+                            <li><a class="menu__link transparent" href="#">Связь с нами</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__section1 right">
+                    <h3>Подписка</h3>
+                    <div class="content">
+                        <p>Получайте специальные предложения и новости сервиса</p><br />
+                    </div>
+
+                    <button class="send-message"><span>Email</span></button>
+                </div>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+
+
+</html>
