@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
    box-sizing: border-box;
-   font-family: Montserrat;
+   
 }
 
 body{
@@ -19,7 +19,7 @@ body{
     max-width: 1920px;
     box-sizing: border-box;
     color: #1F204180;
-    
+    font-family: Montserrat;
     
 }
 
@@ -78,7 +78,7 @@ body{
 
    
 
-   button{
+   button, #submit_button{
        font-size: 12px;
        height: 34px;
        text-transform: uppercase;
@@ -102,6 +102,12 @@ body{
    .menu__register{
        width: 196px;
    }
+
+  .container{
+      padding-left: 140px;
+      padding-right: 140px;
+      height: auto;
+  }
   main{
       height: 830px;
       background-image: url("img/image_1.png");
@@ -136,9 +142,7 @@ body{
 
   .content{
       float: left;
-      margin-top: 20px;
-      
-      
+      margin-top: 20px;    
   }
 
   h3{
@@ -173,9 +177,107 @@ body{
       float: right;
   }
 
+  /* -- main --*/
+
+
+
+  .search__row{
+    position: relative;
+  height: auto;
+}
+
+
+
+
   .search{
-      width: 400px;
-      height: 400px;
-      background-color: #fff;
-      border-radius: 4px;
+    width: 380px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
   }
+
+  .search>h3{
+      font-size: 24px;
+      font-weight: bolder;
+      padding-bottom: 20px;
+      text-transform: none;
+  }
+
+  
+
+ 
+
+
+  .search__arrival, .search__departure{
+    position: relative;
+    height: auto;
+    display: inline;
+    float: left;
+    
+    margin-bottom: 20px;
+    
+  }
+
+.search__departure{
+    float: right;
+}
+.search__3row{
+  position: absolute;
+  width: 320px;
+  padding-bottom: 30px;
+  
+  bottom: 0;
+   
+}
+
+  label{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1F2041;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  input[type = "text"], select{
+    height: 44px;
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+
+
+
+  #submit_button, #guests{
+      width: 100%;
+      position: relative;
+      background-image: url("img/arrow_forward.svg");
+      background-repeat: no-repeat;
+      background-position-x: right;
+      background-position-y: center;
+  }
+  #submit_button{
+    position: relative;
+    
+   margin: 0;
+   
+   bottom: 0px;
+}

@@ -13,10 +13,11 @@
         <header class="header">
             <div class="container">
                 <div class="header__logo">
-                    <img class="header__logo-icon" src="img/logo.svg" alt="logo icon" width="40">
-                    <img class="header__logo-text" src="img/TOXIN.svg" alt="TOXIN" height="13">
+                    <img class="header__logo-icon" src="img/logo.svg" alt="circle logo icon of the hotel Toxin"
+                        width="40">
+                    <img class="header__logo-text" src="img/TOXIN.svg" alt="TOXIN text logo of the hotel Toxin"
+                        height="13">
                 </div>
-
 
                 <nav class="menu">
                     <a class="menu__link" rel="next" href="#">О нас</a>
@@ -34,12 +35,40 @@
         <main>
             <div class="container">
                 <div class="search">
+                    <h3>Найдём номера под ваши пожелания</h3>
+                    <form action="">
+                        <div class="search__row">
+                            <div class="search__arrival">
+                                <label for="arrival_date">прибытие</label><br>
+                                <input type="text" id="arrival_date" value="ДД.ММ.ГГГГ"></input>
+                            </div>
+                            <div class="search__departure">
+                                <label for="last_date">выезд</label><br>
+                                <input type="text" id="last_date" value="ДД.ММ.ГГГГ"></input><br>
+                            </div>
+                        </div>
+                        <div class="search__row">
+                            <label for="guests">гости</label><br>
+                            <select id="guests">
+                                <option value="1">Сколько гостей</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select><br>
+                        </div>
+                        <div class="search__3row">
+                            <label for="submit_button"></label>
+                            <input type="submit" id="submit_button" value="Подобрать номер">
+                        </div>
+                    </form>
 
                 </div>
             </div>
 
         </main>
 
+        <!-- footer of page  -->
 
         <footer class="footer">
             <div class="container">
