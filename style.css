@@ -20,17 +20,57 @@ body{
     box-sizing: border-box;
     color: #1F204180;
     font-family: Montserrat;
+    height: auto
     
 }
 
 .header{
-    
     height: 70px;
     width: 100%;
-    padding-left: 140px;
-    padding-right: 140px;
+   
+}
+.container{
+  padding-left: 140px;
+  padding-right: 140px;
+  height: auto;
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
 }
 
+.header__section{
+ position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+
+.header__menu{
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: auto;
+  line-height: 40px;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+}
+  
+
+.header__menu_content{
+  position: relative;
+  display: inline;
+  justify-items: flex-end;
+  
+  width: 800px;
+  float: right;
+}
+
+
+.header__logo{
+  width: 20%;
+}
 
 .header__logo, .footer__logo{
     height: 100%;  
@@ -43,32 +83,22 @@ body{
    }
    
 
-   .header__logo-text{
-        position: relative;
-        margin-top: 28px;
-        float: left;
-   }
-
-   .footer__logo-icon{
-    margin-right: 15px;
-    float: left;
-   }
-
-   .footer__logo-text{
+.header__logo-text{
     position: relative;
-    margin-top: 13px;
+    margin-top: 28px;
     float: left;
-}
+  }
 
-   .menu{
-    margin-top: 18px;
-       float: right;
-       width: auto;
-       height: auto;
-      line-height: 40px;
+
+
+   
+
+   .header__section{
+     height: 70px;
    }
 
-   .menu__link{
+   .header__link{
+     float: left;
        color:#1F204180;
        margin-right: 20px;
        
@@ -84,45 +114,41 @@ body{
        text-transform: uppercase;
        border: solid 2px #BC9CFF;
        border-radius: 17px;
+      
        font-weight: bold;
        color: #fff;
        background-color: #BC9CFF;
-       margin-right: 20px;
+       margin-left: 20px;
        display: inline-block;
        cursor: pointer;
    }
 
-   .menu__login{
+   .header__login{
+     
        width: 87px;
        background-color: #fff;
-       
+       background-image:linear-gradient(180deg, #BC9CFF 100% #8BA4F9 100%) border-box;
        color: #BC9CFF;
+       background-origin: border-box;
+    background-clip: content-box, border-box;
+       
+       
+       
    }
 
-   .menu__register{
+   .header__gradient_button{
        width: 196px;
    }
 
-  .container{
-      padding-left: 140px;
-      padding-right: 140px;
-      height: auto;
-  }
-  main{
-      height: 830px;
-      background-image: url("img/image_1.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: 100px;
-  }
+   
 
+ /* ---------- FOOTER ----------  */
+  
   .footer{
-    height: 440px;
+    height: 442px;
     text-align: left;
     width: 100%;
-    padding-left: 140px;
-    padding-right: 140px;
+    
   }
 
   .footer__section1{
@@ -138,6 +164,49 @@ body{
       height: auto;
       padding-left: 40px;
       line-height: 200%;
+  }
+
+  .footer__upper{
+    padding-top: 104px;
+    height: 372px;
+    
+  }
+
+  .footerDown{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  
+  }
+  .footerDown__section1{
+    width: 80%;
+  }
+
+  .footerDown__section2{
+    position: relative;
+    display: flex;
+    width: 20%;
+    flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  }
+
+  .footerDown__social_icons{
+    height: 24px;
+    margin-left: 20px;
+  }
+
+  .footer__logo-icon{
+    margin-right: 15px;
+    float: left;
+    }
+  
+  .footer__logo-text{
+      position: relative;
+      margin-top: 13px;
+      float: left;
   }
 
   .content{
@@ -162,13 +231,17 @@ body{
       border-color: #1F204180;
       border-width: 1px;
       font-weight: normal;
+      margin: 0;
+      
   }
+  
 
   span{
     opacity: 0.75;
     float: left;
     margin-left: 15px;
   }
+  
   .transparent{
       opacity: 0.5;
   }
@@ -177,16 +250,27 @@ body{
       float: right;
   }
 
-  /* -- main --*/
+  /* ---------- MAIN ---------- */
 
-
+  main{
+    height: 900px;
+    background-image: url("img/image_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
   .search__row{
     position: relative;
-  height: auto;
-}
+    height: auto;
+  }
 
-
+  #guests>option{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: inherit;
+  }
 
 
   .search{
@@ -209,33 +293,27 @@ body{
       padding-bottom: 20px;
       text-transform: none;
   }
-
-  
-
  
-
-
   .search__arrival, .search__departure{
     position: relative;
     height: auto;
     display: inline;
     float: left;
-    
     margin-bottom: 20px;
     
   }
 
-.search__departure{
+  .search__departure{
     float: right;
-}
-.search__3row{
-  position: absolute;
-  width: 320px;
-  padding-bottom: 30px;
-  
-  bottom: 0;
+  }
+
+  .search__3row{
+    position: absolute;
+    width: 320px;
+    padding-bottom: 30px;
+    bottom: 0;
    
-}
+  }
 
   label{
     font-style: normal;
@@ -264,20 +342,46 @@ body{
     margin-top: 5px;
   }
 
-
-
   #submit_button, #guests{
       width: 100%;
       position: relative;
-      background-image: url("img/arrow_forward.svg");
-      background-repeat: no-repeat;
-      background-position-x: right;
-      background-position-y: center;
+      
   }
   #submit_button{
     position: relative;
-    
-   margin: 0;
-   
-   bottom: 0px;
+    margin: 0;
+    bottom: 0px;
+    background-image: url("img/arrow_forward.svg");
+    background-repeat: no-repeat;
+    background-position: 98%;
 }
+
+.header__gradient_button, .search__gradient_button{
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+ }
+
+.down{
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  height: 456px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.text_anotation{
+ position: inherit;
+  display: block;
+  font-size: 14px;
+  text-align: right;
+  width: 297px;
+  height: auto;
+  line-height: 171%;
+  float: right;
+  padding-top: auto;
+  padding-bottom: 18px;
+  color: rgba(31, 32, 65, 0.75);
+ }
+

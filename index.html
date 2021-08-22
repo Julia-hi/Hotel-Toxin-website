@@ -11,24 +11,26 @@
 <body>
     <div class="wraped_loaded">
         <header class="header">
-            <div class="container">
+            <div class="container header__section">
                 <div class="header__logo">
                     <img class="header__logo-icon" src="img/logo.svg" alt="circle logo icon of the hotel Toxin"
                         width="40">
                     <img class="header__logo-text" src="img/TOXIN.svg" alt="TOXIN text logo of the hotel Toxin"
                         height="13">
                 </div>
+                <div class="header__menu">
 
-                <nav class="menu">
-                    <a class="menu__link" rel="next" href="#">О нас</a>
-                    <a class="menu__link" rel="next" href="#">Услуги</a>
-                    <a class="menu__link" rel="next" href="#">Вакансии</a>
-                    <a class="menu__link" rel="next" href="#">Новости</a>
-                    <a class="menu__link" rel="next" href="#">Соглашения</a>
-                    <button class="menu__login" type="button">Войти</button>
-                    <button class="menu__register">Зарегистрироваться</button>
-                </nav>
+                    <nav>
+                        <a class="header__link" rel="next" href="#">О нас</a>
+                        <a class="header__link" rel="next" href="#">Услуги</a>
+                        <a class="header__link" rel="next" href="#">Вакансии</a>
+                        <a class="header__link" rel="next" href="#">Новости</a>
+                        <a class="header__link" rel="next" href="#">Соглашения</a>
+                    </nav>
+                    <button class="header__login" type="button">Войти</button>
+                    <button class="header__gradient_button">Зарегистрироваться</button>
 
+                </div>
             </div>
         </header>
         <!-- main of page  -->
@@ -50,7 +52,7 @@
                         <div class="search__row">
                             <label for="guests">гости</label><br>
                             <select id="guests">
-                                <option value="1">Сколько гостей</option>
+                                <option value="0">Сколько гостей</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -59,10 +61,16 @@
                         </div>
                         <div class="search__3row">
                             <label for="submit_button"></label>
-                            <input type="submit" id="submit_button" value="Подобрать номер">
+                            <input type="submit" class="search__gradient_button" id="submit_button"
+                                value="Подобрать номер">
                         </div>
                     </form>
 
+                </div>
+            </div>
+            <div class="container down">
+                <div class="text_anotation">
+                    <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
                 </div>
             </div>
 
@@ -71,7 +79,7 @@
         <!-- footer of page  -->
 
         <footer class="footer">
-            <div class="container">
+            <div class="container footer__upper">
                 <div class="footer__section1">
                     <div class="footer__logo">
                         <img class="footer__logo-icon" src="img/logo.svg" alt="logo icon" width="40">
@@ -85,10 +93,10 @@
                     <div class="footer__list">
                         <h3>Навигация</h3>
                         <ul>
-                            <li><a class="menu__link transparent" href="#">О нас</a></li>
-                            <li><a class="menu__link transparent" href="#">Новости</a></li>
-                            <li><a class="menu__link transparent" href="#">Служба поддержки</a></li>
-                            <li><a class="menu__link transparent" href="#">Услуги</a></li>
+                            <li><a class="menu__link" href="#">О нас</a></li>
+                            <li><a class="menu__link" href="#">Новости</a></li>
+                            <li><a class="menu__link" href="#">Служба поддержки</a></li>
+                            <li><a class="menu__link" href="#">Услуги</a></li>
                         </ul>
                     </div>
                 </div>
@@ -96,10 +104,10 @@
                     <div class="footer__list">
                         <h3>О нас</h3>
                         <ul>
-                            <li><a class="menu__link transparent" href="#">О сервисе</a></li>
-                            <li><a class="menu__link transparent" href="#">Наша команда</a></li>
-                            <li><a class="menu__link transparent" href="#">Вакансии</a></li>
-                            <li><a class="menu__link transparent" href="#">Инвесторы</a></li>
+                            <li><a class="menu__link" href="#">О сервисе</a></li>
+                            <li><a class="menu__link" href="#">Наша команда</a></li>
+                            <li><a class="menu__link" href="#">Вакансии</a></li>
+                            <li><a class="menu__link" href="#">Инвесторы</a></li>
                         </ul>
                     </div>
                 </div>
@@ -119,10 +127,30 @@
                         <p>Получайте специальные предложения и новости сервиса</p><br />
                     </div>
 
-                    <button class="send-message"><span>Email</span></button>
+                    <button class="send-message"><span>Email</span><img src="img/arrow_forward_colored.svg" alt="arrow send email">
+                    </button>
                 </div>
 
+
             </div>
+            <div class="container">
+                <div class="footerDown">
+                    <div class="footerDown__section1">
+                        <p>Copyright &copy; 2008 Toxin отелью Все права защищены.</p>
+                    </div>
+                    <div class="footerDown__section2">
+                        <nav>
+                            <a href="#" class="footerDown__social_icons"><img src="img/pic_twitter.svg"
+                                    alt="twitter logo for click"></a>
+                            <a href="#" class="footerDown__social_icons"><img src="img/pic_fb.svg"
+                                    alt="facebook logo for click"></a>
+                            <a href="#" class="footerDown__social_icons"><img src="img/pic_instagram.svg"
+                                    alt="instagram logo click go to Toxin instagram"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>F
+
 
         </footer>
     </div>
