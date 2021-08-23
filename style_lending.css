@@ -1,0 +1,135 @@
+/* ---------- MAIN OF LENDING ----------*/
+
+main{
+    height: 900px;
+    background-image: url("img/image_1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+  .search__row{
+    position: relative;
+    height: auto;
+  }
+
+  #guests>option{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: inherit;
+  }
+
+
+  .search{
+    width: 380px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .search>h3{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    text-transform: none;
+  }
+ 
+  .search__arrival, .search__departure{
+    position: relative;
+    height: auto;
+    display: inline;
+    float: left;
+    margin-bottom: 20px;
+    
+  }
+
+  .search__departure{
+    float: right;
+  }
+
+  .search__3row{
+    position: absolute;
+    width: 320px;
+    padding-bottom: 30px;
+    bottom: 0;
+   
+  }
+
+  label{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1F2041;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  input[type = "date"], select{
+    height: 44px;
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+
+  #submit_button, #guests{
+      width: 100%;
+      position: relative;
+      
+  }
+  #submit_button{
+    position: relative;
+    margin: 0;
+    bottom: 0px;
+    background-image: url("img/arrow_forward.svg");
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+
+.header__gradient_button, .search__gradient_button{
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+ }
+
+.down{
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  height: 456px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.text_anotation{
+ position: inherit;
+  display: block;
+  font-size: 14px;
+  text-align: right;
+  width: 297px;
+  height: auto;
+  line-height: 171%;
+  float: right;
+  padding-top: auto;
+  padding-bottom: 18px;
+  color: rgba(31, 32, 65, 0.75);
+ }

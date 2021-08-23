@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <title>Hotel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_lending.css">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    
 
 </head>
 
@@ -33,25 +37,25 @@
                 </div>
             </div>
         </header>
-        <!-- main of page  -->
+        <!---------- main of page  ---------->
         <main>
             <div class="container">
                 <div class="search">
                     <h3>Найдём номера под ваши пожелания</h3>
-                    <form action="">
+                    <form action="" autocomplete="off" name="search_for_date">
                         <div class="search__row">
                             <div class="search__arrival">
                                 <label for="arrival_date">прибытие</label><br>
-                                <input type="text" id="arrival_date" value="ДД.ММ.ГГГГ"></input>
+                                <input type="date" id="arrival_date" option="ДД.ММ.ГГГГ"></input>
                             </div>
                             <div class="search__departure">
                                 <label for="last_date">выезд</label><br>
-                                <input type="text" id="last_date" value="ДД.ММ.ГГГГ"></input><br>
+                                <input type="date" id="last_date" option="ДД.ММ.ГГГГ"></input><br>
                             </div>
                         </div>
                         <div class="search__row">
                             <label for="guests">гости</label><br>
-                            <select id="guests">
+                            <select id="guests" >
                                 <option value="0">Сколько гостей</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -93,10 +97,10 @@
                     <div class="footer__list">
                         <h3>Навигация</h3>
                         <ul>
-                            <li><a class="menu__link" href="#">О нас</a></li>
-                            <li><a class="menu__link" href="#">Новости</a></li>
-                            <li><a class="menu__link" href="#">Служба поддержки</a></li>
-                            <li><a class="menu__link" href="#">Услуги</a></li>
+                            <li><a class="footer__menu" href="#">О нас</a></li>
+                            <li><a class="footer__menu" href="#">Новости</a></li>
+                            <li><a class="footer__menu" href="#">Служба поддержки</a></li>
+                            <li><a class="footer__menu" href="#">Услуги</a></li>
                         </ul>
                     </div>
                 </div>
@@ -104,10 +108,10 @@
                     <div class="footer__list">
                         <h3>О нас</h3>
                         <ul>
-                            <li><a class="menu__link" href="#">О сервисе</a></li>
-                            <li><a class="menu__link" href="#">Наша команда</a></li>
-                            <li><a class="menu__link" href="#">Вакансии</a></li>
-                            <li><a class="menu__link" href="#">Инвесторы</a></li>
+                            <li><a class="footer__menu" href="#">О сервисе</a></li>
+                            <li><a class="footer__menu" href="#">Наша команда</a></li>
+                            <li><a class="footer__menu" href="#">Вакансии</a></li>
+                            <li><a class="footer__menu" href="#">Инвесторы</a></li>
                         </ul>
                     </div>
                 </div>
@@ -115,9 +119,9 @@
                     <div class="footer__list">
                         <h3>Служба поддержки</h3>
                         <ul>
-                            <li><a class="menu__link transparent" href="#">Соглашения</a></li>
-                            <li><a class="menu__link transparent" href="#">Сообщества</a></li>
-                            <li><a class="menu__link transparent" href="#">Связь с нами</a></li>
+                            <li><a class="footer__menu" href="#">Соглашения</a></li>
+                            <li><a class="footer__menu" href="#">Сообщества</a></li>
+                            <li><a class="footer__menu" href="#">Связь с нами</a></li>
                         </ul>
                     </div>
                 </div>
@@ -127,7 +131,7 @@
                         <p>Получайте специальные предложения и новости сервиса</p><br />
                     </div>
 
-                    <button class="send-message"><span>Email</span><img src="img/arrow_forward_colored.svg" alt="arrow send email">
+                    <button class="send-message" type="email"><span>Email</span><img src="img/arrow_forward_colored.svg" alt="arrow send email">
                     </button>
                 </div>
 
@@ -136,7 +140,7 @@
             <div class="container">
                 <div class="footerDown">
                     <div class="footerDown__section1">
-                        <p>Copyright &copy; 2008 Toxin отелью Все права защищены.</p>
+                        <p>Copyright &copy; 2008 Toxin отель. Все права защищены.</p>
                     </div>
                     <div class="footerDown__section2">
                         <nav>
