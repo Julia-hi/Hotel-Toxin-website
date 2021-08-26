@@ -75,7 +75,7 @@ main{
     margin-bottom: 5px;
   }
 
-  input[type = "date"], select{
+  #arrival_date, #last_date, select{
     height: 44px;
     width: 150px;
     position: relative;
@@ -91,23 +91,56 @@ main{
     margin-top: 5px;
   }
 
+  #calendar{
+    position: absolute;
+    float: left;
+    top: 75px;
+    width: 320px;
+    height: 369px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 2;
+    display: none;
+  }
+
+   #choose_guests{
+    width: 320px;
+    height: 159px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    background-color: #fff;
+    
+    
+  }
+  
+
   #submit_button, #guests{
       width: 100%;
       position: relative;
       
   }
-  #submit_button{
-    position: relative;
-    margin: 0;
-    bottom: 0px;
-    background-image: url("img/arrow_forward.svg");
-    background-repeat: no-repeat;
-    background-position: 98%;
-}
+ 
 
 .header__gradient_button, .search__gradient_button{
   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
  }
+ 
+ #submit_button{
+  position: relative;
+  margin: 0;
+  bottom: 0px;
+  }
+
+  #submit_button img{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    
+  }
+  #submit_button span{
+float: none;
+  }
 
 .down{
   position: relative;
