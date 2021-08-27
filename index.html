@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" href="favicon/favicon.png">
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script type="text/javascript" src="js/lending_scripts.js"></script>
 
 
 
@@ -38,7 +38,7 @@
                         <a class="header__link" rel="next" href="#">Соглашения</a>
                     </nav>
                     <button class="header__login" type="button">Войти</button>
-                    <button class="header__gradient_button">Зарегистрироваться</button>
+                    <button class="header__gradient_button submit_button">Зарегистрироваться</button>
 
                 </div>
             </div>
@@ -48,22 +48,28 @@
             <div class="container">
                 <div class="search">
                     <h3>Найдём номера под ваши пожелания</h3>
-                    <form action="/search" autocomplete="off" name="search_for_date">
+                   
                         <div class="search__row">
                             <div class="search__arrival">
-                                <label for="arrival_date">прибытие</label><br>
-                                <!-- <input type="text" id="arrival_date" value="ДД.ММ.ГГГГ"></input>-->
+                                <!--<label for="arrival_date">прибытие</label><br>
+                                 <input type="text" id="arrival_date" value="ДД.ММ.ГГГГ"></input>
                                 <select name="" id="arrival_date">
                                     <option value="">ДД.ММ.ГГГГ</option>
-                                </select>
+                                </select>-->
+                                <h4>прибытие</h4>
+                                <button type="submit" id="arrival_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
+                                        src="img/expand_more.svg"></button>
                             </div>
 
                             <div class="search__departure">
-                                <label for="last_date">выезд</label><br>
-                                <!--  <input type="text" id="last_date" value="ДД.ММ.ГГГГ" src="img/expand_more.svg"></input><br>-->
+                                <!--<label for="last_date">выезд</label><br>
+                                  <input type="text" id="last_date" value="ДД.ММ.ГГГГ" src="img/expand_more.svg"></input><br>
                                 <select name="" id="last_date">
                                     <option value="">ДД.ММ.ГГГГ</option>
-                                </select>
+                                </select>-->
+                                <h4>выезд</h4>
+                                <button type="submit" id="last_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
+                                        src="img/expand_more.svg"></button>
                             </div>
                             <div id="calendar">
 
@@ -73,7 +79,7 @@
 
 
                         <div class="search__row">
-                            <div>
+                            <!-- <div>
                                 <label for="guests">гости</label><br>
                                 <select id="guests">
                                     <option value="0">Сколько гостей</option>
@@ -83,19 +89,23 @@
                                     <option value="4">4</option>
                                 </select>
                             </div><br>
-                            <div>
+                            <div>-->
+                                <h4>гости</h4>
+                                <button type="submit" id="guests"><span>Сколько гостей</span><img
+                                        src="img/expand_more.svg"></button>
                                 <div class="choose_guests"></div>
                             </div>
-                        </div>
+                        
 
                         <div class="search__3row">
                             <!-- <label for="submit_button"></label>
                             <input type="submit" class="search__gradient_button" id="submit_button"
                                 value="Подобрать номер" scr="/img/arrow_forward.svg" > -->
-                            <button class="search__gradient_button" id="submit_button"><span>Подобрать номер</span><img
+                            <button class="search__gradient_button" type="submit" id="submit_button"
+                                onclick="alert('Обработчик!')"><span>Подобрать номер</span><img
                                     src="img/arrow_forward.svg"></button>
                         </div>
-                    </form>
+                    </div>
 
 
                 </div>

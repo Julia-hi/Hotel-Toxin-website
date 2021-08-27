@@ -9,9 +9,15 @@ main{
     
 }
 
+button{
+  justify-items: center;
+}
+
   .search__row{
     position: relative;
+    display: inline-block;
     height: auto;
+    width: 100%;
   }
 
   #guests>option{
@@ -33,6 +39,7 @@ main{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    justify-items: center;
   }
 
   .search>h3{
@@ -45,26 +52,32 @@ main{
  
   .search__arrival, .search__departure{
     position: relative;
+    display: inherit;
     height: auto;
-    display: inline;
-    float: left;
+    width: 150px;
+   float: left;
+    
+    
     margin-bottom: 20px;
     
   }
 
   .search__departure{
-    float: right;
+    position: absolute;
+    right: 0;
   }
+ 
 
   .search__3row{
     position: absolute;
     width: 320px;
     padding-bottom: 30px;
     bottom: 0;
+    left: auto;
    
   }
 
-  label{
+  h4{
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -73,9 +86,10 @@ main{
     text-transform: uppercase;
     margin-top: 5px;
     margin-bottom: 5px;
+    left: 0;
   }
 
-  #arrival_date, #last_date, select{
+  #arrival_date, #last_date, #guests, select{
     height: 44px;
     width: 150px;
     position: relative;
@@ -89,6 +103,13 @@ main{
     color: rgba(31, 32, 65, 0.75);
     padding-left: 15px;
     margin-top: 5px;
+    background-color: #fff;
+    margin-left: 0;
+  }
+
+  #arrival_date, #last_date{
+    float: left;
+    margin-left: 0;
   }
 
   #calendar{
@@ -132,9 +153,10 @@ main{
   bottom: 0px;
   }
 
-  #submit_button img{
+  button img{
     position: relative;
     float: right;
+    right: 0;
     margin-right: 10px;
     
   }
