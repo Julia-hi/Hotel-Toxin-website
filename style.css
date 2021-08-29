@@ -6,6 +6,13 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-Bold.ttf') format('truetype') ;
+    font-weight: bold;
+    font-style: normal;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -106,7 +113,7 @@ body{
        text-decoration: none;
    }
 
-   
+   /* --------------- BUTTONS STYLE  ---------------  */
 
    button, #submit_button{
        font-size: 12px;
@@ -121,25 +128,31 @@ body{
        margin-left: 20px;
        display: inline-block;
        cursor: pointer;
+       
+   }
+
+   .__gradient_button, .search__gradient_button{
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
    }
 
    .header__login{
      
-       width: 87px;
-       background-color: #fff;
-       background-image:linear-gradient(180deg, #BC9CFF 100% #8BA4F9 100%) border-box;
-       color: #BC9CFF;
-       background-origin: border-box;
-    background-clip: content-box, border-box;
-       
-       
-       
-   }
+       width: 83px;
+       height: 30px;
+             
+  }
 
-   .header__gradient_button{
+   .header__register{
        width: 196px;
    }
-
+ .white_inside{
+   width: 100%;
+   height: 100%;
+   border-radius: 15px;
+  background-color: #fff;
+  color: #BC9CFF;
+  align-items: center;
+ }
    
 
  /* ---------- FOOTER ----------  */
@@ -253,11 +266,7 @@ body{
     padding-bottom: 21px;
   }
   
-  span{
-    
-    float: left;
-    margin-left: 15px;
-  }
+ 
 
   .send-message>img{
     float: right;

@@ -13,6 +13,18 @@ button{
   justify-items: center;
 }
 
+h4{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  left: 0;
+}
+
   .search__row{
     position: relative;
     display: inline-block;
@@ -74,20 +86,10 @@ button{
     padding-bottom: 30px;
     bottom: 0;
     left: auto;
-   
+    z-index: -1;
   }
 
-  h4{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    color: #1F2041;
-    text-transform: uppercase;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    left: 0;
-  }
+  
 
   #arrival_date, #last_date, #guests, select{
     height: 44px;
@@ -125,14 +127,74 @@ button{
     display: none;
   }
 
-   #choose_guests{
+   .search__choose_guests{
     width: 320px;
     height: 159px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+   
     background-color: #fff;
-    
-    
+    z-index: 3;
+   padding-left: 13px;
+   padding-top: 7px;
+   padding-right: 7px;
+   padding-bottom: 13px;
+   font-size: 12px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: bold;
+  color: #1F2041;
+  text-transform: uppercase;
+  }
+
+  .visitors{
+    position: relative;
+    height: 30px;
+    justify-items: center;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+
+  .visitors>h4{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin: auto;
+    align-items: center;
+    opacity: 100%;
+  }
+
+  .calc{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 90px;
+    float: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+  line-height: 22px;
+  color: #1F2041;
+  }
+
+  
+
+  .math{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0;
+    float: left;
+  }
+  .number{
+    display: flex;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   
 
@@ -160,7 +222,7 @@ button{
     margin-right: 10px;
     
   }
-  #submit_button span{
+  #submit_button{
 float: none;
   }
 

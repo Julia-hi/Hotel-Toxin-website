@@ -37,49 +37,50 @@
                         <a class="header__link" rel="next" href="#">Новости</a>
                         <a class="header__link" rel="next" href="#">Соглашения</a>
                     </nav>
-                    <button class="header__login" type="button">Войти</button>
-                    <button class="header__gradient_button submit_button">Зарегистрироваться</button>
+                    <button class="header__login gradient_button" type="button"><div class="white_inside">Войти</div></button>
+                    <button class="header__register gradient_button submit_button">Зарегистрироваться</button>
 
                 </div>
             </div>
+            
         </header>
         <!---------- main of page  ---------->
         <main>
             <div class="container">
                 <div class="search">
                     <h3>Найдём номера под ваши пожелания</h3>
-                   
-                        <div class="search__row">
-                            <div class="search__arrival">
-                                <!--<label for="arrival_date">прибытие</label><br>
+
+                    <div class="search__row">
+                        <div class="search__arrival">
+                            <!--<label for="arrival_date">прибытие</label><br>
                                  <input type="text" id="arrival_date" value="ДД.ММ.ГГГГ"></input>
                                 <select name="" id="arrival_date">
                                     <option value="">ДД.ММ.ГГГГ</option>
                                 </select>-->
-                                <h4>прибытие</h4>
-                                <button type="submit" id="arrival_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
-                                        src="img/expand_more.svg"></button>
-                            </div>
+                            <h4>прибытие</h4>
+                            <button type="submit" id="arrival_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
+                                    src="img/expand_more.svg"></button>
+                        </div>
 
-                            <div class="search__departure">
-                                <!--<label for="last_date">выезд</label><br>
+                        <div class="search__departure">
+                            <!--<label for="last_date">выезд</label><br>
                                   <input type="text" id="last_date" value="ДД.ММ.ГГГГ" src="img/expand_more.svg"></input><br>
                                 <select name="" id="last_date">
                                     <option value="">ДД.ММ.ГГГГ</option>
                                 </select>-->
-                                <h4>выезд</h4>
-                                <button type="submit" id="last_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
-                                        src="img/expand_more.svg"></button>
-                            </div>
-                            <div id="calendar">
-
-                            </div>
+                            <h4>выезд</h4>
+                            <button type="submit" id="last_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
+                                    src="img/expand_more.svg"></button>
+                        </div>
+                        <div id="calendar">
 
                         </div>
 
+                    </div>
 
-                        <div class="search__row">
-                            <!-- <div>
+
+                    <div class="search__row">
+                        <!-- <div>
                                 <label for="guests">гости</label><br>
                                 <select id="guests">
                                     <option value="0">Сколько гостей</option>
@@ -90,12 +91,33 @@
                                 </select>
                             </div><br>
                             <div>-->
-                                <h4>гости</h4>
-                                <button type="submit" id="guests"><span>Сколько гостей</span><img
-                                        src="img/expand_more.svg"></button>
-                                <div class="choose_guests"></div>
+                        <h4>гости</h4>
+                        <button type="submit" id="guests"><span>Сколько гостей</span><img
+                                src="img/expand_more.svg"></button>
+
+                    </div>
+                    <div class="search__choose_guests">
+                        <div class="visitors">
+                            <h4>Взрослые</h4>
+                            <div class="calc"><button class="math minus">-</button>
+                                <div class="math number"><h4>2</h4></div>
+                                <button class="math plus">+</button>
                             </div>
-                        
+                        </div>
+                        <div class="visitors">
+                            <h4>Дети</h4>
+                            <div class="calc"><button class="math minus">-</button>
+                                <div class="math number"><h4>0</h4></div>
+                                <button class="math plus">+</button>
+                            </div>
+                        </div>
+                        <div class="visitors">
+                            <h4>Младенцы</h4>
+                            <div class="calc"><button class="math minus">-</button>
+                                <div class="math number"><h4>0</h4></div>
+                                <button class="math plus">+</button>
+                            </div>
+                        </div>
 
                         <div class="search__3row">
                             <!-- <label for="submit_button"></label>
