@@ -1,17 +1,8 @@
 /* ---------- MAIN OF LENDING ----------*/
 
-main{
-    height: 900px;
-    background-image: url("img/image_1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
 
-button{
-  justify-items: center;
-}
+
+
 
 h4{
   font-style: normal;
@@ -114,18 +105,7 @@ h4{
     margin-left: 0;
   }
 
-  #calendar{
-    position: absolute;
-    float: left;
-    top: 75px;
-    width: 320px;
-    height: 369px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
-    background-color: #fff;
-    z-index: 2;
-    display: none;
-  }
+ 
 
    .search__choose_guests{
     width: 320px;

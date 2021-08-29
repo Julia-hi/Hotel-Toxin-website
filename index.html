@@ -21,66 +21,143 @@
 
     <div class="wraped_loaded">
         <header class="header">
-            <div class="container header__section">
-                <div class="header__logo">
-                    <img class="header__logo-icon" src="img/logo.svg" alt="circle logo icon of the hotel Toxin"
-                        width="40">
-                    <img class="header__logo-text" src="img/TOXIN.svg" alt="TOXIN text logo of the hotel Toxin"
-                        height="13">
-                </div>
-                <div class="header__menu">
+            <div class="container">
+                <div class="header__section">
+                    <div class="header__logo">
+                        <img class="header__logo-icon" src="img/logo.svg" alt="circle logo icon of the hotel Toxin"
+                            width="40">
+                        <img class="header__logo-text" src="img/TOXIN.svg" alt="TOXIN text logo of the hotel Toxin"
+                            height="13">
+                    </div>
+                    <div class="header__menu">
+                        <nav>
+                            <a class="header__link" rel="next" href="#">О нас</a>
+                            <a class="header__link" rel="next" href="#">Услуги</a>
+                            <a class="header__link" rel="next" href="#">Вакансии</a>
+                            <a class="header__link" rel="next" href="#">Новости</a>
+                            <a class="header__link" rel="next" href="#">Соглашения</a>
+                        </nav>
+                        <button class="header__login submit_button gradient_button" type="button">
+                            <div class="header__login white_cover_button">Войти</div>
+                        </button>
+                        <button class="header__register submit_button gradient_button">Зарегистрироваться</button>
 
-                    <nav>
-                        <a class="header__link" rel="next" href="#">О нас</a>
-                        <a class="header__link" rel="next" href="#">Услуги</a>
-                        <a class="header__link" rel="next" href="#">Вакансии</a>
-                        <a class="header__link" rel="next" href="#">Новости</a>
-                        <a class="header__link" rel="next" href="#">Соглашения</a>
-                    </nav>
-                    <button class="header__login gradient_button" type="button"><div class="white_inside">Войти</div></button>
-                    <button class="header__register gradient_button submit_button">Зарегистрироваться</button>
-
+                    </div>
                 </div>
             </div>
-            
         </header>
+
         <!---------- main of page  ---------->
         <main>
-            <div class="container">
-                <div class="search">
-                    <h3>Найдём номера под ваши пожелания</h3>
+            <div class="main__lending">
+                <div class="container">
+                    <div class="search">
+                        <h3>Найдём номера под ваши пожелания</h3>
 
-                    <div class="search__row">
-                        <div class="search__arrival">
-                            <!--<label for="arrival_date">прибытие</label><br>
+                        <div class="search__row">
+                            <div class="search__arrival">
+                                <!--<label for="arrival_date">прибытие</label><br>
                                  <input type="text" id="arrival_date" value="ДД.ММ.ГГГГ"></input>
                                 <select name="" id="arrival_date">
                                     <option value="">ДД.ММ.ГГГГ</option>
                                 </select>-->
-                            <h4>прибытие</h4>
-                            <button type="submit" id="arrival_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
-                                    src="img/expand_more.svg"></button>
-                        </div>
+                                <h4>прибытие</h4>
+                                <button type="submit" id="arrival_date"
+                                    onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
+                                        src="img/expand_more.svg"></button>
+                            </div>
 
-                        <div class="search__departure">
-                            <!--<label for="last_date">выезд</label><br>
+                            <div class="search__departure">
+                                <!--<label for="last_date">выезд</label><br>
                                   <input type="text" id="last_date" value="ДД.ММ.ГГГГ" src="img/expand_more.svg"></input><br>
                                 <select name="" id="last_date">
                                     <option value="">ДД.ММ.ГГГГ</option>
                                 </select>-->
-                            <h4>выезд</h4>
-                            <button type="submit" id="last_date" onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
-                                    src="img/expand_more.svg"></button>
-                        </div>
-                        <div id="calendar">
+                                <h4>выезд</h4>
+                                <button type="submit" id="last_date"
+                                    onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
+                                        src="img/expand_more.svg"></button>
+                            </div>
+                            <div class="calendar">
+                                <div class="calendar__header to_line">
+                                    <nav>
+                                        <div class="calendar__arrow arrow_back"><img class="calendar__arrow" src="img/arrow_forward_colored.svg"
+                                                alt="стрелка листать на один месяц назад"></div>
+                                        <div class="calendar__date_group">
+                                            <div class="calendar__month">
+                                                <span>Август</span>
+                                            </div>
+
+                                            <div class="calendar__year">
+                                                <span>2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="calendar__arrow">
+                                        <img class="calendar__arrow" src="img/arrow_forward_colored.svg"
+                                            alt="стрелка листать на один месяц вперед"></div>
+                                    </nav>
+                                </div>
+                                <div class="calendar__days_of_week to_line">
+                                    <div class="calendar__day_week monday" id="monday">Пн</div>
+                                    <div class="calendar__day_week tuesday" id="tuesday">Вт</div>
+                                    <div class="calendar__day_week wednesday" id="wednesday">Ср</div>
+                                    <div class="calendar__day_week thursday" id="thursday">Чт</div>
+                                    <div class="calendar__day_week friday" id="friday">Пт</div>
+                                    <div class="calendar__day_week saturday" id="saturday">Сб</div>
+                                    <div class="calendar__day_week sunday" id="sunday">Вс</div>
+                                </div>
+                                <div class="calendar__first_week to_line">
+                                    <div class="calendar__day monday" id="box_1">29</div>
+                                    <div class="calendar__day tuesday" id="box_2">30</div>
+                                    <div class="calendar__day wednesday" id="box_3">31</div>
+                                    <div class="calendar__day thursday" id="box_4">1</div>
+                                    <div class="calendar__day friday" id="box_5">2</div>
+                                    <div class="calendar__day saturday" id="box_6">3</div>
+                                    <div class="calendar__day sunday" id="box_7">4</div>
+                                </div>
+                                <div class="calendar__second_week to_line">
+                                    <div class="calendar__day" id="box_8">5</div>
+                                    <div class="calendar__day" id="box_9">6</div>
+                                    <div class="calendar__day" id="box_10">7</div>
+                                    <div class="calendar__day" id="box_11">8</div>
+                                    <div class="calendar__day" id="box_12">9</div>
+                                    <div class="calendar__day" id="box_13">10</div>
+                                    <div class="calendar__day" id="box_14">11</div>
+                                </div>
+                                <div class="calendar__third_week to_line">
+                                    <div class="calendar__day" id="box_15">12</div>
+                                    <div class="calendar__day" id="box_16">13</div>
+                                    <div class="calendar__day" id="box_17">14</div>
+                                    <div class="calendar__day" id="box_18">15</div>
+                                    <div class="calendar__day" id="box_19">16</div>
+                                    <div class="calendar__day" id="box_20">17</div>
+                                    <div class="calendar__day" id="box_21">18</div>
+                                </div>
+                                <div class="calendar__forth_week to_line">
+                                    <div class="calendar__day" id="box_22">19</div>
+                                    <div class="calendar__day" id="box_23">20</div>
+                                    <div class="calendar__day" id="box_24">21</div>
+                                    <div class="calendar__day" id="box_25">22</div>
+                                    <div class="calendar__day" id="box_26">23</div>
+                                    <div class="calendar__day" id="box_27">24</div>
+                                    <div class="calendar__day" id="box_28">25</div>
+                                </div>
+                                <div class="calendar__fifth_week to_line">
+                                    <div class="calendar__day monday" id="box_29">26</div>
+                                    <div class="calendar__day tuesday" id="box_30">27</div>
+                                    <div class="calendar__day wednesday" id="box_31">28</div>
+                                    <div class="calendar__day thursday" id="box_32">29</div>
+                                    <div class="calendar__day friday" id="box_33">30</div>
+                                    <div class="calendar__day saturday" id="box_34">1</div>
+                                    <div class="calendar__day sunday" id="box_35">2</div>
+                                </div>
+                            </div>
 
                         </div>
 
-                    </div>
 
-
-                    <div class="search__row">
-                        <!-- <div>
+                        <div class="search__row">
+                            <!-- <div>
                                 <label for="guests">гости</label><br>
                                 <select id="guests">
                                     <option value="0">Сколько гостей</option>
@@ -91,53 +168,59 @@
                                 </select>
                             </div><br>
                             <div>-->
-                        <h4>гости</h4>
-                        <button type="submit" id="guests"><span>Сколько гостей</span><img
-                                src="img/expand_more.svg"></button>
+                            <h4>гости</h4>
+                            <button type="submit" id="guests"><span>Сколько гостей</span><img
+                                    src="img/expand_more.svg"></button>
 
-                    </div>
-                    <div class="search__choose_guests">
-                        <div class="visitors">
-                            <h4>Взрослые</h4>
-                            <div class="calc"><button class="math minus">-</button>
-                                <div class="math number"><h4>2</h4></div>
-                                <button class="math plus">+</button>
-                            </div>
                         </div>
-                        <div class="visitors">
-                            <h4>Дети</h4>
-                            <div class="calc"><button class="math minus">-</button>
-                                <div class="math number"><h4>0</h4></div>
-                                <button class="math plus">+</button>
+                        <div class="search__choose_guests">
+                            <div class="visitors">
+                                <h4>Взрослые</h4>
+                                <div class="calc"><button class="math minus">-</button>
+                                    <div class="math number">
+                                        <h4>2</h4>
+                                    </div>
+                                    <button class="math plus">+</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="visitors">
-                            <h4>Младенцы</h4>
-                            <div class="calc"><button class="math minus">-</button>
-                                <div class="math number"><h4>0</h4></div>
-                                <button class="math plus">+</button>
+                            <div class="visitors">
+                                <h4>Дети</h4>
+                                <div class="calc"><button class="math minus">-</button>
+                                    <div class="math number">
+                                        <h4>0</h4>
+                                    </div>
+                                    <button class="math plus">+</button>
+                                </div>
                             </div>
-                        </div>
+                            <div class="visitors">
+                                <h4>Младенцы</h4>
+                                <div class="calc"><button class="math minus">-</button>
+                                    <div class="math number">
+                                        <h4>0</h4>
+                                    </div>
+                                    <button class="math plus">+</button>
+                                </div>
+                            </div>
 
-                        <div class="search__3row">
-                            <!-- <label for="submit_button"></label>
+                            <div class="search__3row">
+                                <!-- <label for="submit_button"></label>
                             <input type="submit" class="search__gradient_button" id="submit_button"
                                 value="Подобрать номер" scr="/img/arrow_forward.svg" > -->
-                            <button class="search__gradient_button" type="submit" id="submit_button"
-                                onclick="alert('Обработчик!')"><span>Подобрать номер</span><img
-                                    src="img/arrow_forward.svg"></button>
+                                <button class="search__gradient_button" type="submit" id="submit_button"
+                                    onclick="alert('Обработчик!')"><span>Подобрать номер</span><img
+                                        src="img/arrow_forward.svg"></button>
+                            </div>
                         </div>
+
+
                     </div>
-
-
+                </div>
+                <div class="container down">
+                    <div class="text_anotation">
+                        <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
+                    </div>
                 </div>
             </div>
-            <div class="container down">
-                <div class="text_anotation">
-                    <p>Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
-                </div>
-            </div>
-
         </main>
 
         <!-- footer of page  -->
