@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Hotel</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_lending.css">
+    <!--<link rel="stylesheet" href="style_lending.css">-->
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
     <link rel="icon" type="image/png" href="favicon/favicon.png">
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
@@ -40,7 +40,7 @@
                         <button class="header__login submit_button gradient_button" type="button">
                             <div class="header__login white_cover_button">Войти</div>
                         </button>
-                        <button class="header__register submit_button gradient_button">Зарегистрироваться</button>
+                        <button class="submit_button gradient_button" id="register_button">Зарегистрироваться</button>
 
                     </div>
                 </div>
@@ -56,32 +56,19 @@
 
                         <div class="search__row">
                             <div class="search__arrival">
-                                <!--<label for="arrival_date">прибытие</label><br>
-                                 <input type="text" id="arrival_date" value="ДД.ММ.ГГГГ"></input>
-                                <select name="" id="arrival_date">
-                                    <option value="">ДД.ММ.ГГГГ</option>
-                                </select>-->
                                 <h4>прибытие</h4>
-                                <button type="submit" id="arrival_date"
-                                    onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
-                                        src="img/expand_more.svg"></button>
+                                <input type="text" id="arrival_date" onclick="showCalendar()" value="ДД.ММ.ГГГГ">
                             </div>
 
                             <div class="search__departure">
-                                <!--<label for="last_date">выезд</label><br>
-                                  <input type="text" id="last_date" value="ДД.ММ.ГГГГ" src="img/expand_more.svg"></input><br>
-                                <select name="" id="last_date">
-                                    <option value="">ДД.ММ.ГГГГ</option>
-                                </select>-->
                                 <h4>выезд</h4>
-                                <button type="submit" id="last_date"
-                                    onclick="showCalendar()"><span>ДД.ММ.ГГГГ</span><img
-                                        src="img/expand_more.svg"></button>
+                                <input type="text" id="last_date" onclick="showCalendar()" value="ДД.ММ.ГГГГ">
                             </div>
-                            <div class="calendar">
+                            <div class="calendar" id="calendar">
                                 <div class="calendar__header to_line">
                                     <nav>
-                                        <div class="calendar__arrow arrow_back"><img class="calendar__arrow" src="img/arrow_forward_colored.svg"
+                                        <div class="calendar__arrow arrow_back"><img class="calendar__arrow"
+                                                src="img/arrow_forward_colored.svg"
                                                 alt="стрелка листать на один месяц назад"></div>
                                         <div class="calendar__date_group">
                                             <div class="calendar__month">
@@ -93,8 +80,9 @@
                                             </div>
                                         </div>
                                         <div class="calendar__arrow">
-                                        <img class="calendar__arrow" src="img/arrow_forward_colored.svg"
-                                            alt="стрелка листать на один месяц вперед"></div>
+                                            <img class="calendar__arrow" src="img/arrow_forward_colored.svg"
+                                                alt="стрелка листать на один месяц вперед">
+                                        </div>
                                     </nav>
                                 </div>
                                 <div class="calendar__days_of_week to_line">
@@ -151,29 +139,21 @@
                                     <div class="calendar__day saturday" id="box_34">1</div>
                                     <div class="calendar__day sunday" id="box_35">2</div>
                                 </div>
+                                <div class="calendar__footer to_line">
+                                    <button type="reset" id="calendar_reset">Очистить</button>
+                                    <button type="submit" id="calendar_submit">Применить</button>
+                                </div>
                             </div>
 
                         </div>
 
 
                         <div class="search__row">
-                            <!-- <div>
-                                <label for="guests">гости</label><br>
-                                <select id="guests">
-                                    <option value="0">Сколько гостей</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
-                            </div><br>
-                            <div>-->
                             <h4>гости</h4>
-                            <button type="submit" id="guests"><span>Сколько гостей</span><img
-                                    src="img/expand_more.svg"></button>
+                            <input type="button" id="guests" onclick="showGuestForm()" value="Сколько гостей"></input>
 
                         </div>
-                        <div class="search__choose_guests">
+                        <div class="search__choose_guests" id="choose_guests">
                             <div class="visitors">
                                 <h4>Взрослые</h4>
                                 <div class="calc"><button class="math minus">-</button>
@@ -201,17 +181,19 @@
                                     <button class="math plus">+</button>
                                 </div>
                             </div>
-
-                            <div class="search__3row">
-                                <!-- <label for="submit_button"></label>
-                            <input type="submit" class="search__gradient_button" id="submit_button"
-                                value="Подобрать номер" scr="/img/arrow_forward.svg" > -->
-                                <button class="search__gradient_button" type="submit" id="submit_button"
-                                    onclick="alert('Обработчик!')"><span>Подобрать номер</span><img
-                                        src="img/arrow_forward.svg"></button>
+                            <div class="calendar__footer to_line">
+                                <button type="reset" id="calendar_reset">Очистить</button>
+                                <button type="submit" id="calendar_submit">Применить</button>
                             </div>
+
                         </div>
 
+                        <div class="search__3row">
+
+                            <button class="submit_button gradient_button" type="submit"
+                                id="submit_button"><span>Подобрать номер</span><img
+                                    src="img/arrow_forward.svg"></button>
+                        </div>
 
                     </div>
                 </div>

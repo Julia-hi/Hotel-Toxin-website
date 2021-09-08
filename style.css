@@ -51,13 +51,14 @@ body{
  position: relative;
   display: flex;
   align-items: center;
-  
+  justify-content: space-between;
 }
 
 .header__menu{
   position: relative;
   display: flex;
   width: 80%;
+  max-width: 800px;
   height: auto;
   line-height: 40px;
   flex-wrap: nowrap;
@@ -67,14 +68,7 @@ body{
 }
   
 
-.header__menu_content{
-  position: relative;
-  display: inline;
-  justify-items: flex-end;
-  
-  width: 800px;
-  float: right;
-}
+
 
 
 .header__logo{
@@ -114,9 +108,11 @@ body{
     width: 87px;
   }
 
-   .header__register{
-    width: 196px;
-   }
+  #register_button{
+    padding: auto;
+    min-width: 196px;
+    
+  }
 
   /* --------------- MAIN OF LENDING PAGE  ---------------  */ 
 
@@ -127,6 +123,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     }
+     #register_button{
+    width: 196px;
+  }
 
       /* ---   CALENDAR --- */
     .calendar{
@@ -138,19 +137,51 @@ body{
       border: 1px solid rgba(31, 32, 65, 0.25);
       border-radius: 4px;
       background-color: #fff;
-      z-index: 2;
-      /*display: none;*/
+      z-index: 3;  
+      display: none;
       padding: 20px;
       font-size: 12px;
       line-height: 15px;
       color: #BC9CFF; 
     }
 
-    .calendar__header{  
+    .calendar__header, .calendar__footer{  
       height: 24px;
+      width: 100%;
       font-size: 19px;
       line-height: 23px;
-      margin-bottom: 30px;   
+       
+    }
+    .calendar__header>nav{
+      justify-content: space-between;
+    }
+
+    .calendar__header{
+      margin-bottom: 30px;  
+    }
+
+    .calendar__footer{
+      padding-top: 20px;
+    }
+
+    .calendar__footer>button{
+      color: inherit;
+      background-color: transparent;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: inherit;
+      border: none;
+    }
+
+    #calendar_reset{
+      position: absolute;
+      left: 0;
+    }
+
+    #calendar_submit{
+      position: absolute;
+      right: 0;
     }
 
     .calendar__date_group{
@@ -183,7 +214,7 @@ body{
       display: flex;
       width: 100%;
       height: 100%;
-      justify-content: space-between;
+      justify-content: flex-end;
     }
 
     .calendar__arrow{
@@ -236,6 +267,261 @@ body{
       color: rgba(31, 32, 65, 0.5);
       
     }
+
+    
+
+h4{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  left: 0;
+}
+
+ 
+
+  #guests>option{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: inherit;
+  }
+
+
+  .search{
+    width: 380px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    justify-items: center;
+  }
+
+  .search__row{
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+
+  .search>h3{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    text-transform: none;
+  }
+ 
+  .search__arrival, .search__departure{
+    position: relative;
+    display: inherit;
+    height: auto;
+    width: 150px;
+    float: left;
+    margin-bottom: 20px;
+    
+  }
+
+  .search__departure{
+    position: absolute;
+    right: 0;
+  }
+ 
+
+  .search__3row{
+    position: absolute;
+    display: block;
+    width: 320px;
+    padding-bottom: 30px;
+    bottom: 0;
+    left: auto;
+    z-index: 1;
+  }
+
+  
+
+  #arrival_date, #last_date, #guests, select{
+    height: 44px;
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.75);
+    padding-left: 15px;
+    margin-top: 5px;
+    background-color: #fff;
+    margin-left: 0;
+  }
+
+  #arrival_date, #last_date{
+    float: left;
+    margin-left: 0;
+    text-align: left;
+    background-image: url(img/expand_more.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+    cursor: pointer;
+  }
+
+ 
+
+   .search__choose_guests{
+     position: relative;
+    width: 320px;
+    height: 159px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+   text-align: left;
+    background-color: #fff;
+    z-index: 2;
+   padding-left: 13px;
+   padding-top: 7px;
+   padding-right: 7px;
+   padding-bottom: 13p;
+   font-size: 12px;
+  line-height: 15px;
+  font-style: normal;
+  font-weight: bold;
+  color: #1F2041;
+  text-transform: uppercase;
+  display: none;
+  }
+
+  .visitors{
+    position: relative;
+    height: 30px;
+    justify-items: center;
+    align-items: center;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+
+  .visitors>h4{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin: auto;
+    align-items: center;
+    opacity: 100%;
+  }
+
+  .calc{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 90px;
+    float: right;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F2041;
+    
+  }
+
+  
+
+  .math{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 22px;
+    color: rgba(31, 32, 65, 0.5);
+    margin: 0;
+    float: left;
+  }
+  .number{
+    display: flex;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  #submit_button, #guests{
+      width: 100%;
+      
+      
+  }
+
+  #guests{
+    position: relative;
+    background-image: url(img/expand_more.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+ #submit_button{
+  height: 44px;
+  position: relative;
+  margin: 0;
+  bottom: 0px;
+  display: inline;
+  float: none;
+  padding-right: 10px;
+  }
+
+  #submit_button>img{
+    position: absolute;
+    right: 3%;
+  }
+
+  button img{
+    position: relative;
+    display: inline;
+    height: 42%;
+    margin-top: auto;
+    float: right;
+    right: 0;
+    
+    
+  }
+ 
+
+.down{
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  height: 456px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.text_anotation{
+ position: inherit;
+  display: block;
+  font-size: 14px;
+  text-align: right;
+  width: 297px;
+  height: auto;
+  line-height: 171%;
+  float: right;
+  padding-top: auto;
+  padding-bottom: 18px;
+  color: rgba(31, 32, 65, 0.75);
+ }
 
 
 /* -------------------- MAIN OF REGISTRATION PAGE  --------------------  */  
@@ -294,7 +580,10 @@ body{
 
    button{
     justify-content: center;
+    cursor: pointer;
   }
+
+ 
 
   .submit_button{
     font-size: 12px;
@@ -329,6 +618,8 @@ body{
   align-content: center;
   justify-content: center;
  }
+
+ 
    
 
  /* ---------- FOOTER ----------  */
