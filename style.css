@@ -162,6 +162,7 @@ body{
 
     .calendar__footer{
       padding-top: 20px;
+      color: #BC9CFF;
     }
 
     .calendar__footer>button{
@@ -249,7 +250,7 @@ body{
       color: #fff;
     }
 
-    .calendar__month, .calendar__year{   /*  устанавливает пробел между месяцем и годом  */
+    .calendar__month, .calendar__year{   /*  sets space between month and year  */
       margin: 2px;
     }
 
@@ -258,15 +259,12 @@ body{
       
     }
 
-   
-
-    .calendar__day{
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 15px;
-      color: rgba(31, 32, 65, 0.5);
-      
-    }
+  .calendar__day{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(31, 32, 65, 0.5);
+  }
 
     
 
@@ -336,7 +334,6 @@ h4{
     right: 0;
   }
  
-
   .search__3row{
     position: absolute;
     display: block;
@@ -346,9 +343,7 @@ h4{
     left: auto;
     z-index: 1;
   }
-
   
-
   #arrival_date, #last_date, #guests, select{
     height: 44px;
     width: 150px;
@@ -378,27 +373,25 @@ h4{
     cursor: pointer;
   }
 
- 
-
-   .search__choose_guests{
-     position: relative;
+  .search__choose_guests{
+    position: relative;
     width: 320px;
     height: 159px;
     border: 1px solid rgba(31, 32, 65, 0.5);
-   text-align: left;
+    text-align: left;
     background-color: #fff;
     z-index: 2;
-   padding-left: 13px;
-   padding-top: 7px;
-   padding-right: 7px;
-   padding-bottom: 13p;
-   font-size: 12px;
-  line-height: 15px;
-  font-style: normal;
-  font-weight: bold;
-  color: #1F2041;
-  text-transform: uppercase;
-  display: none;
+    padding-left: 13px;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 13p;
+    font-size: 12px;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: bold;
+    color: #1F2041;
+    text-transform: uppercase;
+    display: none;
   }
 
   .visitors{
@@ -446,6 +439,7 @@ h4{
     margin: 0;
     float: left;
   }
+
   .number{
     display: flex;
     border: none;
@@ -457,8 +451,7 @@ h4{
 
   #submit_button, #guests{
       width: 100%;
-      
-      
+            
   }
 
   #guests{
@@ -485,18 +478,6 @@ h4{
     position: absolute;
     right: 3%;
   }
-
-  button img{
-    position: relative;
-    display: inline;
-    height: 42%;
-    margin-top: auto;
-    float: right;
-    right: 0;
-    
-    
-  }
- 
 
 .down{
   position: relative;
@@ -752,9 +733,17 @@ h4{
     float: left;
   }
 
-  /* ---------- MAIN ---------- */
-
- main{
-   height: 100%;
+ input[type=email]{
+   padding-left: 15px;
+   background-image: url(img/arrow_forward_colored.svg);
+   background-repeat: no-repeat;
+   background-position-y: center;
+   background-position-x: 95%;
+   border: 1px solid rgba(31, 32, 65, 0.25);
+   border-radius: 4px;
+   color: rgba(31, 32, 65, 0.25);
+   font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
  }
-
