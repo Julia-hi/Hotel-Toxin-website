@@ -47,6 +47,41 @@ body{
   float: left;
 }
 
+input{
+  padding: 15px;
+}
+
+input[type=email]{
+background-image: url(img/arrow_forward_colored.svg);
+background-repeat: no-repeat;
+background-position-y: center;
+background-position-x: 95%;
+border: 1px solid rgba(31, 32, 65, 0.25);
+border-radius: 4px;
+color: rgba(31, 32, 65, 0.25); 
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+}
+
+#user_email{
+ background-image: none;
+ margin-top: 5px;
+ }
+
+input[type=text]{
+height: 44px;
+background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+font-size: 14px;
+line-height: 18px;
+color: rgba(31, 32, 65, 0.25);
+width: 100%;
+}
+
 .header__section{
  position: relative;
   display: flex;
@@ -111,6 +146,7 @@ body{
   #register_button{
     padding: auto;
     min-width: 196px;
+    margin-left: 20px;
     
   }
 
@@ -464,17 +500,9 @@ h4{
     cursor: pointer;
   }
   
- #submit_button{
-  height: 44px;
-  position: relative;
-  margin: 0;
-  bottom: 0px;
-  display: inline;
-  float: none;
-  padding-right: 10px;
-  }
+ 
 
-  #submit_button>img{
+  #submit_button>img, #registration__submit>img{
     position: absolute;
     right: 3%;
   }
@@ -519,15 +547,15 @@ h4{
   }
 
   .registration{
-    position: relative;
+    position: absolute;
     display: block;
     top: 0;
     width: 380px;
     height: 646px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .12);
-    margin-left: auto;
-    margin-right: auto;
+    left: calc(50% - 380px/2 + 3px);
+    
     margin: 19px;
     padding-left: 30px;
     padding-right: 30px;
@@ -548,6 +576,9 @@ h4{
     height: 100%;
    
 }
+.registration__form form{
+  height: 100%;
+}
 
 .registration h3 {
     font-size: 24px;
@@ -557,6 +588,123 @@ h4{
     text-transform: none;
 }
 
+.full_line{
+  width: 100%;
+  margin: 0;
+}
+
+.registration__row{
+  height: auto;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+
+.down_row{
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.registration__row p{
+  font-size: 14px;
+line-height: 18px;
+color: #000;
+}
+
+#registration__submit{
+  height: 44px;
+  position: absolute;
+  bottom: 74px;
+}
+
+.registration__row label{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+    text-transform: uppercase;
+      color: #1F2041;
+      margin-bottom: 5px;
+ }
+
+ 
+
+ #date_of_birth{
+   margin-bottom: 20px;
+   margin-top: 5px;
+ }
+
+ .gender{
+   display: inline;
+   padding-right: 20px;
+ }
+
+ .registration__offer{
+   position: absolute;
+   bottom: 138px;
+ }
+
+ input[type=radio]:checked{
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 10px;
+  
+ }
+
+ /* toggle switch */
+
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 3px;
+  bottom: 3px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+input:checked + .slider{
+  border: 1px solid #BC9CFF;
+}
+
    /* --------------- BUTTONS STYLE  ---------------  */
 
    button{
@@ -564,7 +712,6 @@ h4{
     cursor: pointer;
   }
 
- 
 
   .submit_button{
     font-size: 12px;
@@ -575,11 +722,10 @@ h4{
     font-weight: bold;
     color: #fff;
     background-color: #BC9CFF;
-    margin-left: 20px;
     display: inline-block;
     cursor: pointer;
-       
-   }
+  }
+  
 
    .gradient_button{
     background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -588,11 +734,11 @@ h4{
   
 
  .white_cover_button{
-   position:relative;
-   display: flex;
-   width: 100%;
-   height: 100%;
-   border-radius: 18px;
+  position:relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
   background-color: #fff;
   color: #BC9CFF;
   align-items: center;
@@ -600,7 +746,7 @@ h4{
   justify-content: center;
  }
 
- 
+
    
 
  /* ---------- FOOTER ----------  */
@@ -733,17 +879,16 @@ h4{
     float: left;
   }
 
- input[type=email]{
-   padding-left: 15px;
-   background-image: url(img/arrow_forward_colored.svg);
-   background-repeat: no-repeat;
-   background-position-y: center;
-   background-position-x: 95%;
-   border: 1px solid rgba(31, 32, 65, 0.25);
-   border-radius: 4px;
-   color: rgba(31, 32, 65, 0.25);
-   font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
- }
+ 
+
+ /* ----- RESPONSIVE ------ */
+
+ @media screen and (max-width: 1210px){
+   .header__menu>nav{
+     display: none;
+   }
+
+   .container{
+    padding-left: 40px;
+    padding-right: 40px;
+ }}
